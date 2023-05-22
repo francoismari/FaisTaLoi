@@ -1,20 +1,43 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import {
+  FlatList,
+  Pressable,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import { convertToLawText } from "./src/utils/convertToLawText";
+import { useEffect, useState } from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { StackNavigator } from "./src/navigation";
 
 export default function App() {
+  const [lawText, setLawText] = useState("");
+
+  const handleClick = async () => {
+    const text = "Rendre obligatoire les frites à la cantine";
+    const convertedText = await convertToLawText(text);
+    console.log("CONVERTED TEXT : ", convertedText);
+    setLawText(convertedText);
+  };
+
+  // useEffect(() => {
+  //   handleClick();
+  // }, []);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

@@ -1,0 +1,92 @@
+export default [
+  {
+    id: 1,
+    name: "Agriculture et alimentation",
+    color: "darkgreen",
+    emoji: "🌽",
+  },
+  {
+    id: 2,
+    name: "Culture et patrimoine",
+    color: "purple",
+    emoji: "🏛️",
+  },
+  {
+    id: 3,
+    name: "Économie et finance",
+    color: "gold",
+    emoji: "💰",
+  },
+  {
+    id: 4,
+    name: "Éducation et jeunesse",
+    color: "deepskyblue",
+    emoji: "🎓",
+  },
+  {
+    id: 5,
+    name: "Environnement et climat",
+    color: "green",
+    emoji: "🌳",
+  },
+  {
+    id: 6,
+    name: "Intégration et immigration",
+    color: "sandybrown",
+    emoji: "🌍",
+  },
+  {
+    id: 7,
+    name: "Justice",
+    color: "slategrey",
+    emoji: "⚖️",
+  },
+  {
+    id: 8,
+    name: "Logement et urbanisme",
+    color: "brown",
+    emoji: "🏡",
+  },
+  {
+    id: 9,
+    name: "Politiques sociales et famille",
+    color: "mediumvioletred",
+    emoji: "👨‍👩‍👧‍👦",
+  },
+  {
+    id: 10,
+    name: "Santé publique",
+    color: "red",
+    emoji: "⚕️",
+  },
+  {
+    id: 11,
+    name: "Sécurité et défense",
+    color: "navy",
+    emoji: "🛡️",
+  },
+  {
+    id: 12,
+    name: "Sport et loisirs",
+    color: "orange",
+    emoji: "⚽",
+  },
+  {
+    id: 13,
+    name: "Technologie et numérique",
+    color: "blue",
+    emoji: "💻",
+  },
+  {
+    id: 14,
+    name: "Travail et emploi",
+    color: "olive",
+    emoji: "👷‍♀️",
+  },
+  {
+    id: 15,
+    name: "Union Européenne",
+    color: "yellow",
+    emoji: "🇪🇺",
+  },
+];
