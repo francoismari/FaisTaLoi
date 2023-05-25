@@ -3,7 +3,9 @@ import axios from "axios";
 export async function convertToLawText(inputText) {
   const apiEndpoint = "https://api.openai.com/v1/completions";
 
-  const prompt = `Traduis le texte suivant comme un texte de loi (avec un ensemble d'articles), qui peut ensuite être soumis à l'Assemblée nationale française: "${inputText}"`;
+  const prompt = `Convertis cette proposition en un texte de loi formel et extremement complet et rigoureux (avec un ou plusieurs articles), prêt à être soumis à l'Assemblée Nationale française: "${inputText}"`;
+
+  console.log('PROMPT: ', prompt)
 
   try {
     const response = await axios.post(
@@ -11,7 +13,11 @@ export async function convertToLawText(inputText) {
       {
         model: "text-davinci-003",
         prompt,
-        max_tokens: 200,
+        max_tokens: 500,
+        temperature: 1,
+        top_p: 1,
+        frequency_penalty: 0,
+        presence_penalty: 0,
       },
       {
         headers: {

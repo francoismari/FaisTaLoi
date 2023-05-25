@@ -2,7 +2,7 @@
   "expo": {
     "name": "FaisTaLoi",
     "slug": "FaisTaLoi",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.francoismari.FaisTaLoi"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +26,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9f48d5ff-ec67-48be-9fe9-563aebea3ac9"
+      }
     }
   }
 }
